@@ -2,30 +2,39 @@ package Q_1_10.Q4;
 
 /**
  * @author bockey
+ * 执行用时 :
+ * 3 ms
+ * , 在所有 Java 提交中击败了
+ * 99.74%
+ * 的用户
+ * 内存消耗 :
+ * 47.5 MB
+ * , 在所有 Java 提交中击败了
+ * 92.98%
+ * 的用户
  */
 public class answ {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m;
         int n;
-        int[] shorts;
-        int[] longs;
+        int[] A;
+        int[] B;
         if (nums1.length <= nums2.length) {
-            shorts = nums1;
-            longs = nums2;
+            A = nums1;
+            B = nums2;
         } else {
-            shorts = nums2;
-            longs = nums1;
+            A = nums2;
+            B = nums1;
         }
-        int[] A = shorts;
-        int[] B = longs;
-        m = shorts.length;
-        n = longs.length;
+
+        m = A.length;
+        n = B.length;
         int iMin = 0, iMax = m, halfLen = (m + n + 1) / 2;
         while (iMin <= iMax) {
             int i = (iMin + iMax) / 2;
             int j = halfLen - i;
             if (i < iMax && B[j - 1] > A[i]) {
-                iMin = i - 1;
+                iMin = i + 1;
                 // 左组最大B ，比 右组最小A 大，因此需要调整，增加i值
                 // i is too small ,j要边小，i要变大
             } else if (i > iMin && A[i - 1] > B[j]) {
