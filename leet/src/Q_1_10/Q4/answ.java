@@ -24,19 +24,49 @@ public class answ {
         while (iMin <= iMax) {
             int i = (iMin + iMax) / 2;
             int j = halfLen - i;
-            if (i < iMax && B[j-1]>A[i]) {
-            iMin =i-1;
-            // i is too small
-            }else if(i > iMin && A[i-1] > B[j]){
-
+            if (i < iMax && B[j - 1] > A[i]) {
+                iMin = i - 1;
+                // 左组最大B ，比 右组最小A 大，因此需要调整，增加i值
+                // i is too small ,j要边小，i要变大
+            } else if (i > iMin && A[i - 1] > B[j]) {
+                // 左组最大A ，比 右组最小B 大，因此需要调整，增加i值
+                // j is too small ，i要边小，j要变大
+                iMax = i - 1;
+            } else {
+                //两种情况都不是时，接近终点
+                int maxLeft = 0;
+                //左侧最小值
+                if (i == 0) {
+                    //如果i是0，则左侧最大值是B组的
+                    maxLeft = B[j - 1];
+                } else if (j == 0) {
+                    //如果j是0，则左侧最大值是B组的
+                    maxLeft = A[i - 1];
+                } else {
+                    //都不是时，比较一下AB组末尾的值
+                    maxLeft = Math.max(A[i - 1], B[j - 1]);
+                }
+                if ((m + n) % 2 == 1) {
+                    //如果是奇数总数时，返回这个即可
+                    return maxLeft;
+                }
+                //右侧最小值
+                int minRight = 0;
+                if (i == m) {
+                    //如果i是A组总长，则右侧组全由B组组成
+                    minRight = B[j];
+                } else if (j == n) {
+                    //如果j是A组总长，则右侧组全由B组组成
+                    minRight = A[i];
+                } else {
+                    //都不是时，对比即可
+                    minRight = Math.min(B[j], A[i]);
+                }
+                return (maxLeft + minRight) / 2.0;
             }
-
         }
-
         return 0;
-
     }
-
 
 }
 /**
