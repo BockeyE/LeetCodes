@@ -16,13 +16,20 @@ public class answ {
             shorts = nums2;
             longs = nums1;
         }
+        int[] A = shorts;
+        int[] B = longs;
         m = shorts.length;
         n = longs.length;
         int iMin = 0, iMax = m, halfLen = (m + n + 1) / 2;
         while (iMin <= iMax) {
             int i = (iMin + iMax) / 2;
             int j = halfLen - i;
+            if (i < iMax && B[j-1]>A[i]) {
+            iMin =i-1;
+            // i is too small
+            }else if(i > iMin && A[i-1] > B[j]){
 
+            }
 
         }
 
