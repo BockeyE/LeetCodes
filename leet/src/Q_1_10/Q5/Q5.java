@@ -17,20 +17,17 @@ public class Q5 {
                 return s;
             }
             return s.substring(1);
-
         }
         res = s.substring(0, 1);
         for (int i = 1; i < chars.length - 1; i++) {
             char a = chars[i - 1];
             char b = chars[i];
             char c = chars[i + 1];
-
             if (a == c) {
                 tem = getSub(chars, i - 1, i + 1);
                 if (tem.length() > res.length()) {
                     res = tem;
                 }
-
             }
             if (a == b) {
                 tem = getSub(chars, i - 1, i);
@@ -50,10 +47,7 @@ public class Q5 {
 
     String getSub(char[] chars, int i, int j) {
         while (i >= 0 && j <= chars.length - 1) {
-            char t1 = chars[i];
-            char t2 = chars[j];
-
-            if (t1 == t2) {
+            if (chars[i] == chars[j]) {
                 i--;
                 j++;
             } else {
@@ -61,9 +55,7 @@ public class Q5 {
             }
         }
         i = (i + 1);
-        String res2 = String.copyValueOf(chars, i, (j - i));
-        return res2;
-
+        return String.copyValueOf(chars, i, (j - i));
     }
 
     public static void main(String[] args) {
@@ -75,11 +67,9 @@ public class Q5 {
 }
 /**
  中心扩展法
- 特殊情况1，空字符，单字符，直接判断返回
- 特殊情况2，双字符，可能不同可能相同，判断返回
- 特殊情况3，3以上多字符，都不同，先取一个首位字符做ret，
+ 特殊情况1，a,空字符，单字符，直接判断返回
+ 特殊情况2，cc，双字符，可能不同可能相同，判断返回
+ 特殊情况3，abc，3以上多字符，都不同，先取一个首位字符做ret，
  之后进入主方法，从 1 开始，同时取到0，1，2三个字符，然后先判断0-2是否相同，相同即进入扩展子方法
  不同时，依次判断0-1，1-2字符组，即可找到所有情况下的回文，并留下最长ret
-
-
  */
