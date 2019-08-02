@@ -18,7 +18,6 @@ public class Q6 {
         }
         StringBuilder retsb=new StringBuilder();
         char[] chars = s.toCharArray();
-        ArrayList ret = new ArrayList();
         int i = 0;
         int period = (numRows - 1) * 2;
         while (i < chars.length) {
@@ -66,7 +65,7 @@ public class Q6 {
      * 先根据输入的数字，new出对应数量的list，然后把这些list也存在一个list里，这样可以通过一个游标数字
      * 直接get到存放char的list。
      *
-     * 然后进行遍历，遍历的时候，以numRow -1 为半个周期， 图示例子的 L-D-R是周期点，
+     * 然后进行遍历，遍历的时候，以numRow -1 为半个周期，2*（numRow-1）为一个周期， 图示例子的 L-D-R是周期点，
      * 每个周期里，先单列向下，然后折返。
      * 周期的起始点是  %numRow =0 的点，也就是LDR几个点
      * 然后顺序执行遍历，添加到对应位置的list里，
