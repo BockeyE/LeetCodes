@@ -13,7 +13,7 @@ package Q_1_10.Q4;
  * 92.98%
  * 的用户
  */
-public class answ {
+public class Q4 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m;
         int n;

@@ -18,7 +18,7 @@ package Q_1_10.Q2;
  * 链接：https://leetcode-cn.com/problems/add-two-numbers
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Sum2 {
+public class Q2 {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int tempValue = 0;
         int promote = 0;
@@ -89,7 +89,7 @@ class ListNode {
         l2.next = new ListNode(4);
 
 
-        ListNode listNode = Sum2.addTwoNumbers(org1, org2);
+        ListNode listNode = Q2.addTwoNumbers(org1, org2);
 
         System.out.println(listNode.val);
         System.out.println(listNode.next.val);
