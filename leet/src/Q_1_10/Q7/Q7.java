@@ -42,5 +42,4 @@ public class Q7 {
         int reverse = q.reverse(-2147483648);
         System.out.println(reverse);
     }
-
 }
