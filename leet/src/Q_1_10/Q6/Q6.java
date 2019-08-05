@@ -19,9 +19,7 @@ public class Q6 {
         StringBuilder retsb=new StringBuilder();
         char[] chars = s.toCharArray();
         int i = 0;
-        int period = (numRows - 1) * 2;
         while (i < chars.length) {
-            if (i % period == 0) {
                 for (int j = 0; j < numRows && i < chars.length; ) {
                     arrlist.get(j).add(chars[i]);
                     j++;
@@ -32,7 +30,6 @@ public class Q6 {
                     i++;
                     j--;
                 }
-            }
         }
         for (int k = 0; k < arrlist.size();k++ ) {
             ArrayList ar = arrlist.get(k);
