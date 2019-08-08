@@ -5,6 +5,8 @@ package Q_1_10.Q7;
  */
 public class Q7 {
 
+//    执行用时 :3 ms, 在所有 Java 提交中击败了96.64%的用户
+//    内存消耗 :33.8 MB, 在所有 Java 提交中击败了79.16%的用户
     public int reverse(int x) {
         if (x == Integer.MAX_VALUE || x == Integer.MIN_VALUE) {
             return 0;

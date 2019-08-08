@@ -2,7 +2,10 @@ package main
 
 import "math"
 
+//执行用时 :20 ms, 在所有 Go 提交中击败了83.49%的用户
+//内存消耗 :5.5 MB, 在所有 Go 提交中击败了92.74%的用户
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
+
 	A := nums1
 	B := nums2
 	if len(nums1) > len(nums2) {

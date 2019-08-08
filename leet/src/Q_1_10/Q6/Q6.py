@@ -1,9 +1,8 @@
 class Solution(object):
     def convert(self, s, numRows):
         """
-        :type s: str
-        :type numRows: int
-        :rtype: str
+       执行用时 :96 ms ms, 在所有 Python 提交中击败了24.93%的用户
+       内存消耗 :11.7 MB, 在所有 Python 提交中击败了46.04%的用户
         """
         if numRows == 1:
             return s

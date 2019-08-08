@@ -24,6 +24,8 @@ import java.util.HashSet;
  *      请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
  */
 public class Q3 {
+//    执行用时 :18 ms, 在所有 Java 提交中击败了78.44% 的用户
+//    内存消耗 :38.4 MB, 在所有 Java 提交中击败了88.23% 的用户
     public static int lengthOfLongestSubstring(String s) {
         HashSet set = new HashSet();
         int left = 0;

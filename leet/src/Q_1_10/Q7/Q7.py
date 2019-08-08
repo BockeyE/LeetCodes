@@ -1,8 +1,8 @@
 class Solution(object):
     def reverse(self, x):
         """
-        :type x: int
-        :rtype: int
+        执行用时 :20 ms, 在所有 Python 提交中击败了92.39%%的用户
+        内存消耗 :11.7 MB, 在所有 Python 提交中击败了25.38%的用户
         """
         if x >= 2147483647 or x <= (-2147483648):
             return 0

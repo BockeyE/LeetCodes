@@ -1,5 +1,7 @@
 class Solution(object):
     def longestPalindrome(self, s):
+        # 执行用时 :1148 ms, 在所有 Python 提交中击败了55.65%的用户
+        # 内存消耗 :11.7 MB, 在所有 Python 提交中击败了52.57%的用户
 
         res = ''
         tem = ''

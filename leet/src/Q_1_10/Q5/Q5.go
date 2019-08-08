@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func longestPalindrome(s string) string {
-
+	//执行用时 :	8  ms, 在所有 Go 提交中击败了	82.63%的用户
+	//内存消耗 :	2.3 MB, 在所有 Go 提交中击败了	52.84%的用户
 	if len(s) <= 1 {
 		return s
 	} else if len(s) == 2 {

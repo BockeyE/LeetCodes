@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//执行用时 :4 ms, 在所有 Go 提交中击败了99.03%的用户
+//内存消耗 :3.8 MB, 在所有 Go 提交中击败了26.61%的用户
 func twoSum(nums []int, target int) []int {
 	tem := make(map[int]int)
 	for i := 0; i < len(nums); i++ {

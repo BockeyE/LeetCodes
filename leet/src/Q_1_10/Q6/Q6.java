@@ -7,6 +7,9 @@ import java.util.List;
  * @author bockey
  */
 public class Q6 {
+//执行用时 :31 ms, 在所有 Java 提交中击败了40.62%的用户
+// 内存消耗 :48.9 MB, 在所有 Java 提交中击败了62.04%的用户
+
     public String convert(String s, int numRows) {
         if (numRows==1){
             return s;

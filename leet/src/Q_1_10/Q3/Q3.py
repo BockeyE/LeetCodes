@@ -1,4 +1,6 @@
 class Solution(object):
+# 执行用时 :48 ms, 在所有 Python 提交中击败了88.93%的用户
+# 内存消耗 :12.6 MB, 在所有 Python 提交中击败了23.52%的用户
     def lengthOfLongestSubstring(self, s):
         """
         :type s: str

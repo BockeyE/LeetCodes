@@ -8,7 +8,8 @@ import (
 )
 
 func convert(s string, numRows int) string {
-
+	//执行用时 :	20 ms, 在所有 Go 提交中击败了49.51%的用户
+	//内存消耗 :	6.4 MB, 在所有 Go 提交中击败了48.72%的用户
 	if numRows == 1 {
 		return s
 	}

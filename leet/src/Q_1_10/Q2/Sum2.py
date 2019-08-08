@@ -3,7 +3,8 @@ class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
-
+# 执行用时 :60 ms, 在所有 Python 提交中击败了87.12%的用户
+# 内存消耗 :11.7 MB, 在所有 Python 提交中击败了33.17%的用户
 
 class Solution(object):
     def addTwoNumbers(self, l1, l2):

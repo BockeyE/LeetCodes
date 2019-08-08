@@ -2,16 +2,8 @@ package Q_1_10.Q4;
 
 /**
  * @author bockey
- * 执行用时 :
- * 3 ms
- * , 在所有 Java 提交中击败了
- * 99.74%
- * 的用户
- * 内存消耗 :
- * 47.5 MB
- * , 在所有 Java 提交中击败了
- * 92.98%
- * 的用户
+ * 执行用时 : 3 ms , 在所有 Java 提交中击败了 99.74% 的用户
+ * 内存消耗 : 47.5 MB , 在所有 Java 提交中击败了 92.98% 的用户
  */
 public class Q4 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {

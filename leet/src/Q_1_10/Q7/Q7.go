@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//执行用时 :0 ms, 在所有 Go 提交中击败了100.00%的用户
+//内存消耗 :2.2 MB, 在所有 Go 提交中击败了78.23%的用户
 func reverse(x int) int {
 	if x >= 2147483647 || x <= -2147483648 {
 		return 0

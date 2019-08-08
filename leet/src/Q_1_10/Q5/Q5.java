@@ -6,6 +6,8 @@ import java.util.List;
  * @author bockey
  */
 public class Q5 {
+//    执行用时 :28 ms, 在所有 Java 提交中击败了65.53%的用户
+//    内存消耗 :48 MB, 在所有 Java 提交中击败了32.09%的用户
     public String longestPalindrome(String s) {
         char[] chars = s.toCharArray();
         String res = "";

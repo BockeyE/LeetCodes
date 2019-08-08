@@ -7,6 +7,8 @@ type ListNode struct {
 	Next *ListNode
 }
 
+//执行用时 :12 ms, 在所有 Go 提交中击败了92.24%的用户
+//内存消耗 :5 MB, 在所有 Go 提交中击败了80.17%的用户
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	tem := 0
 	promote := 0

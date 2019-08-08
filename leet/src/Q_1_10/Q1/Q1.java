@@ -7,21 +7,16 @@ import java.util.HashMap;
 /**
  * @author bockey
  * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
- *
  * 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
- *
  * 示例:
- *
  * 给定 nums = [2, 7, 11, 15], target = 9
- *
  * 因为 nums[0] + nums[1] = 2 + 7 = 9
  * 所以返回 [0, 1]
- *
- * 来源：力扣（LeetCode）
- * 链接：https://leetcode-cn.com/problems/two-sum
- * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class Q1 {
+//    执行用时 :7 ms, 在所有 Java 提交中击败了85.28% 的用户
+//    内存消耗 :39 MB, 在所有 Java 提交中击败了48.85% 的用户
+
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -68,7 +63,6 @@ public class Q1 {
      * 含有3，3目标是6，则第一步遇到添加3却已经存在时，就会计算，6是否等于3+3，如果是直接返回，如果不是，不做操作。
      * 这样的逻辑下，如果是只有一个4，但是目标是8，这样，在第二步，寻找8-4=4时，就会找到它本身，这时，正确的4，4组合，在第一步一定会返回，
      * 函数没有返回，所以第二步里遇到的8-4=4，必然不是结果，只是找到了本身。
-     *
      *
      * 到hashmap中找target-i的值即可，注意筛选出3，3这样同数的
      * 在加入hash时就会弹回值，在此处判断，如果3，3不满足，则在第二次遍历时直接跳过即可     */

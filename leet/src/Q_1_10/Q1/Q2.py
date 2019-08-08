@@ -1,10 +1,7 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+        # 执行用时 :80 ms , 在所有 Python 提交中击败了 60.30% 的用户
+        # 内存消耗 :13.4 MB , 在所有 Python 提交中击败了 5.01% 的用户
         dicts = {}
         for i in range(len(nums)):
             a = nums[i]

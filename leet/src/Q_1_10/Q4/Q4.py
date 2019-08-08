@@ -1,4 +1,7 @@
 class Solution(object):
+# 执行用时 :96 ms, 在所有 Python 提交中击败了88.73%的用户
+# 内存消耗 :11.9 MB, 在所有 Python 提交中击败了25.79%的用户
+
     def findMedianSortedArrays(self, nums1, nums2):
         A = nums1
         B = nums2
