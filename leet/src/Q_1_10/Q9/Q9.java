@@ -4,6 +4,7 @@ import java.math.BigInteger;
 
 /**
  * @author bockey
+ * 判断回文数字，取余法倒转数字，然后自身比较即可
  */
 public class Q9 {
 //    执行用时 : 12 ms, 在所有 Java 提交中击败了98.08% 的用户

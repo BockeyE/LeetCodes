@@ -5,6 +5,8 @@ import java.util.List;
 
 /**
  * @author bockey
+ *
+ * Z字变换，按要求逐顺序遍历并添加进二维数组，再顺序取出即可
  */
 public class Q6 {
 //执行用时 :31 ms, 在所有 Java 提交中击败了40.62%的用户

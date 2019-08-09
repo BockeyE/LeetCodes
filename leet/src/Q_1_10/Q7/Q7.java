@@ -2,6 +2,8 @@ package Q_1_10.Q7;
 
 /**
  * @author bockey
+ * 整数反转，先判断极值，然后取余数法倒转每一位即可
+ *
  */
 public class Q7 {
 

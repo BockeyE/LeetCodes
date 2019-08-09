@@ -4,6 +4,9 @@ import java.util.List;
 
 /**
  * @author bockey
+ *
+ * 最长回文字符
+ *
  */
 public class Q5 {
 //    执行用时 :28 ms, 在所有 Java 提交中击败了65.53%的用户

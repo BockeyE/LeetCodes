@@ -4,6 +4,7 @@ import java.math.BigInteger;
 
 /**
  * @author bockey
+ * 字符串变整数，先判断特殊情况，然后取符号，然后在int 范围内操作即可
  *
  *执行用时 :  7 ms  , 在所有 Java 提交中击败了  89.26%  的用户
  *内存消耗 :  36 MB  , 在所有 Java 提交中击败了  86.20%  的用户
