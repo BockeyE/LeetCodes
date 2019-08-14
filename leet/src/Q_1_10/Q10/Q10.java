@@ -4,13 +4,16 @@ package Q_1_10.Q10;
  * @author bockey
  */
 public class Q10 {
+//    执行用时 : 145 ms, 在所有 Java 提交中击败了36.94%    的用户
+//    内存消耗 : 100.1 MB, 在所有 Java 提交中击败了5.03%    的用户
+
     public boolean isMatch(String s, String pattern) {
 
 //        如果模式串中有星号，它会出现在第二个位置，
-//        即 \text{pattern[1]}pattern[1] 。
+//        即pattern[1] 。
 //        这种情况下，我们可以直接忽略模式串中这一部分，
 //        或者删除匹配串的第一个字符，前提是它能够匹配模式串当前位置字符，
-//        即 \text{pattern[0]}pattern[0] 。
+//        即 pattern[0] 。
 //        如果两种操作中有任何一种使得剩下的字符串能匹配，
 //        那么初始时，匹配串和模式串就可以被匹配。
 
