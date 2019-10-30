@@ -13,6 +13,7 @@ public class Q15 {
 
         ArrayList<Integer> ar = Arrays.asList();
 
+
     }
 
     public static void main(String[] args) {
