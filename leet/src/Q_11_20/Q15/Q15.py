@@ -1,6 +1,8 @@
 from numpy import sort
 
 
+# 执行用时 :436 ms, 在所有 python 提交中击败了93.30%的用户
+# 内存消耗 :14.9 MB, 在所有 python 提交中击败了71.73%的用户
 class Solution(object):
     def threeSum(self, nums):
         """
@@ -14,11 +16,10 @@ class Solution(object):
             return ans
         lenth = len(nums)
         nums = sorted(nums)
-        print(nums)
         for i in range(lenth):
             if nums[i] > 0:
                 break
-            if nums[i] > 0 and nums[i] == nums[i - 1]:
+            if i > 0 and nums[i] == nums[i - 1]:
                 continue
             l = i + 1
             r = lenth - 1
