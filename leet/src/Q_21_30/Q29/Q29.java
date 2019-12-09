@@ -26,10 +26,12 @@ public class Q29 {
         int movep = 0;
         int originDivisor = divisor;
         //这里用移位操作提升速度，如果x2（左移）依然小于被除数，则可以移动，缩小被除数计算的次数
+        //注意左移越界以后就变成负数，这里需要加边界判断
         while (divisor << 1 < dividend && divisor << 1 > 0) {
             divisor = divisor << 1;
             movep++;
         }
+//        反向除回来，每次右移回去
         while (dividend >= divisor) {
             dividend -= divisor;
             int time = 1 << movep;
