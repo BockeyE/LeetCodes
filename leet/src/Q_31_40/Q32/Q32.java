@@ -17,7 +17,6 @@ import java.util.Stack;
  */
 public class Q32 {
 
-
     public int longestValidParentheses(String s) {
         int maxans = 0;
         Stack<Integer> stack = new Stack<>();
