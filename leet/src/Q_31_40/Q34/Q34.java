@@ -17,7 +17,6 @@ public class Q34 {
 //    当求最右下标时，道理同样适用。
 
 
-    //
     private int extremeInsertionIndex(int[] nums, int target, boolean left) {
         int lo = 0;
         int hi = nums.length;
