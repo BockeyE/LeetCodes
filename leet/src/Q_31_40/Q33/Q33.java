@@ -38,12 +38,13 @@ public class Q33 {
         return 0;
     }
 
+//    搜索方法
     public int search(int left, int right) {
-    /*
-    Binary search
-    */
+//        左右未相遇时循环
         while (left <= right) {
+//            先取中位作为钉值
             int pivot = (left + right) / 2;
+//            如果piv出是target，则返回其值
             if (nums[pivot] == target)
                 return pivot;
             else {
@@ -57,6 +58,7 @@ public class Q33 {
     }
 
 
+//    搜索方法入口
     public int search(int[] nums, int target) {
         this.nums = nums;
         this.target = target;
