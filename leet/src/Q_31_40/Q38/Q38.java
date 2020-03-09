@@ -22,8 +22,8 @@ public class Q38 {
      * 思路， 遍历当前str，设置2个标，一个记录当前起始点，一个往右走，如果当前右点字符与起始点不一样，则记录数量，并拼接成新的
      * 此时将起始点设置为右点，继续至str结束
      *
-     * @param n
-     * @return
+     执行用时 :     1 ms     , 在所有 Java 提交中击败了     98.70%     的用户
+     内存消耗 :     37.1 MB     , 在所有 Java 提交中击败了     5.29%     的用户
      */
     public String countAndSay(int n) {
         if (n == 1) {
