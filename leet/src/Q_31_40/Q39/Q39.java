@@ -41,34 +41,43 @@ public class Q39 {
      * 内存消耗 :     * 41.9 MB     * , 在所有 Java 提交中击败了     * 5.25%     * 的用户
      */
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        // 排序是为了提前终止搜索
+
         List<List<Integer>> res = new ArrayList<>();
         if (candidates == null) {
             return res;
         }
         int len = candidates.length;
-
+        // 排序是为了提前终止搜索
         Arrays.sort(candidates);
+        //目标数组，长度，目标，起点，一个栈，结果列表
         BacktrackingWithDeepFirstSearching(candidates, len, target, 0, new Stack<>(), res);
         return res;
     }
 
     private void BacktrackingWithDeepFirstSearching(int[] candidates, int len, int target, int begin, Stack<Integer> pre, List<List<Integer>> res) {
-//        如果当前搜索目标是0则添加后返回
+        //如果当前搜索目标是0则添加后返回
+        //当前搜索目标是0，意味着当前栈内的序列能够满足加和后正好等于target
         if (target == 0) {
             res.add(new ArrayList<>(pre));
             return;
-            //遍历，index为本分支上一节点的减数的下标
         }
+        //遍历，index为本分支上一节点的减数的下标
         for (int i = begin; i < len; i++) {
             //如果减数大于目标值，则差为负数，不符合结果
             if (candidates[i] <= target) {
                 pre.push(candidates[i]);
                 //目标值减去元素值
                 BacktrackingWithDeepFirstSearching(candidates, len, target - candidates[i], i, pre, res);
-                //每次回溯将最后一次加入的元素删除
+                //每次回溯将最后一次加入的元素删除，意思是每次从上面的递归函数进去之后，不论结果如何，
+                //返回之后都要把这一次添加到栈内的元素删除掉，这样在返回上一层的时候栈内不会有遗留的元素
                 pre.pop();
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int[] candidates = {2, 3, 5};
+        int target = 8;
+        System.out.println(new Q39().combinationSum(candidates,target));
     }
 }

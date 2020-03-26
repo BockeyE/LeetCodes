@@ -36,26 +36,24 @@ public class Q40 {
      * @param res
      */
     private void dfs(int[] candidates, int len, int begin, int residue, Deque<Integer> path, List<List<Integer>> res) {
+        //如果当前搜索目标是0则添加后返回
+        //当前搜索目标是0，意味着当前栈内的序列能够满足加和后正好等于target
         if (residue == 0) {
             res.add(new ArrayList<>(path));
             return;
         }
         for (int i = begin; i < len; i++) {
-            // 大剪枝
+            // 大剪枝，如果剩余不足，直接结束循环
             if (residue - candidates[i] < 0) {
                 break;
             }
-
-            // 小剪枝
+            // 小剪枝，如果有重复元素，则直接加一到后面
             if (i > begin && candidates[i] == candidates[i - 1]) {
                 continue;
             }
-
             path.addLast(candidates[i]);
-
             // 因为元素不可以重复使用，这里递归传递下去的是 i + 1 而不是 i
             dfs(candidates, len, i + 1, residue - candidates[i], path, res);
-
             path.removeLast();
         }
     }

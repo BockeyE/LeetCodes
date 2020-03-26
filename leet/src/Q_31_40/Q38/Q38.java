@@ -39,12 +39,6 @@ public class Q38 {
     }
 
     public String generateNext(String tar) {
-        if ("1".equals(tar)) {
-            return "11";
-        }
-        if ("11".equals(tar)) {
-            return "21";
-        }
         StringBuilder sb = new StringBuilder();
         int m = 0;
         int count = 0;
