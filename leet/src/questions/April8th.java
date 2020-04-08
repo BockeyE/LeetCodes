@@ -20,7 +20,6 @@ public class April8th {
         return func(left - 1, right - 1) + func(left - 1, right);
     }
 
-
     static void dfs(int[][] map, int left, int right) {
         int n = map.length;
 
@@ -108,7 +107,6 @@ public class April8th {
         return count;
     }
 
-
     public static void main(String[] args) {
 
         int[] ret = {0};
@@ -123,7 +121,6 @@ public class April8th {
 //        System.out.println(dfsCount(map, 0, 3, ret));
 //        System.out.println(func(5, 4));
     }
-
 
     class LRUCache {
         private class Node {
