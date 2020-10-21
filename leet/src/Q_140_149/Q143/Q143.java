@@ -1,6 +1,9 @@
 package Q_140_149.Q143;
+/**
+ * 执行用时：3 ms, 在所有 Java 提交中击败了36.50% 的用户
+ * 内存消耗：41.7 MB, 在所有 Java 提交中击败了49.09% 的用户
+ */
 
-import java.util.ArrayDeque;
 import java.util.LinkedList;
 
 public class Q143 {
