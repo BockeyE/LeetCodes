@@ -11,12 +11,19 @@ import java.util.List;
  */
 public class Q1365 {
     public int[] smallerNumbersThanCurrent(int[] nums) {
+        //sort the array
         int[] sorted = Arrays.copyOf(nums, nums.length);
         Arrays.sort(sorted);
+        //prepare a map
         HashMap m = new HashMap();
+
+        //put key with sorted value, put value with the position after sort,
+        //which means when  i in position 4, it means
+        //there is 4 elements smaller than i
         for (int i = 0; i < sorted.length; i++) {
             m.putIfAbsent(sorted[i], i);
         }
+        // get ret
         int[] ret = new int[nums.length];
         for (int i = 0; i < ret.length; i++) {
             int k = nums[i];
@@ -26,6 +33,11 @@ public class Q1365 {
     }
 
     public static void main(String[] args) {
+        String a = "ssaa0022";
+        System.out.println(a.substring(a.length() - 4));
+        System.out.println(a.substring(0,a.length() - 4));
+        System.out.println(Integer.parseInt(a.substring(a.length() - 4, a.length() - 1)));
+
         int[] nums = {8, 1, 2, 2, 3};
 
         new Q1365().smallerNumbersThanCurrent(nums);
