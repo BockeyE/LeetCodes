@@ -3,8 +3,8 @@ package Q_300plus;
 import java.util.HashSet;
 
 /**
- * 执行用时：3 ms, 在所有 Java 提交中击败了95.82% 的用户
- * 内存消耗：38.9 MB, 在所有 Java 提交中击败了67.36% 的用户
+ 执行用时：2 ms, 在所有 Java 提交中击败了99.48% 的用户
+ 内存消耗：38.5 MB, 在所有 Java 提交中击败了94.10% 的用户
  */
 public class Q349 {
     public int[] intersection(int[] nums1, int[] nums2) {
