@@ -23,6 +23,7 @@ public class Q1207 {
     }
 
     public static void main(String[] args) {
+        System.out.println(true||false||false);
         int[] arr = {1, 2, 2, 1, 1, 3};
         System.out.println(new Q1207().uniqueOccurrences(arr));
     }
