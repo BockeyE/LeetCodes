@@ -2,6 +2,10 @@ package Q_121_130.Q127;
 
 import java.util.*;
 
+/**
+ * 执行用时：80 ms, 在所有 Java 提交中击败了58.30% 的用户
+ * 内存消耗：41.7 MB, 在所有 Java 提交中击败了44.37% 的用户
+ */
 public class Q127 {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         // 第 1 步：先将 wordList 放到哈希表里，便于判断某个单词是否在 wordList 里
@@ -13,6 +17,10 @@ public class Q127 {
 
         // 第 2 步：图的广度优先遍历，必须使用队列和表示是否访问过的 visited 哈希表
         Queue<String> queue = new LinkedList<>();
+//        java.util.LinkedList.offer(E e) 将指定的元素添加为LinkedList的最后一个元素
+//        当队列为空时候，使用add方法会报错，而offer方法会返回false。\
+//        作为List使用时,一般采用add / get方法来 压入/获取对象。
+//        作为Queue使用时,才会采用 offer/poll/take等方法作为链表对象时,offer等方法相对来说没有什么意义这些方法是用于支持队列应用的。
         queue.offer(beginWord);
         Set<String> visited = new HashSet<>();
         visited.add(beginWord);
@@ -36,12 +44,6 @@ public class Q127 {
 
     /**
      * 尝试对 currentWord 修改每一个字符，看看是不是能与 endWord 匹配
-     *
-     * @param currentWord
-     * @param endWord
-     * @param queue
-     * @param visited
-     * @param wordSet
      * @return
      */
     private boolean changeWordEveryOneLetter(String currentWord, String endWord,
