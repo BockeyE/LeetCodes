@@ -20,7 +20,7 @@ public class Q127 {
 //        java.util.LinkedList.offer(E e) 将指定的元素添加为LinkedList的最后一个元素
 //        当队列为空时候，使用add方法会报错，而offer方法会返回false。\
 //        作为List使用时,一般采用add / get方法来 压入/获取对象。
-//        作为Queue使用时,才会采用 offer/poll/take等方法作为链表对象时,offer等方法相对来说没有什么意义这些方法是用于支持队列应用的。
+//        作为Queue使用时,才会采用 offer/poll/take等方法作为链表对象时,offer等方法相对来说没有什么意义,这些方法是用于支持队列应用的。
         queue.offer(beginWord);
         Set<String> visited = new HashSet<>();
         visited.add(beginWord);
@@ -39,8 +39,11 @@ public class Q127 {
             }
             step++;
         }
+
         return 0;
     }
+
+
 
     /**
      * 尝试对 currentWord 修改每一个字符，看看是不是能与 endWord 匹配
