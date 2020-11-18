@@ -1,4 +1,4 @@
-package Q_300plus;
+package Q_150plus;
 
 /**
  * 执行用时：3 ms, 在所有 Java 提交中击败了78.68% 的用户

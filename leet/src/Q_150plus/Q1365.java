@@ -1,9 +1,7 @@
-package Q_300plus;
+package Q_150plus;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * 执行用时：4 ms, 在所有 Java 提交中击败了73.11% 的用户
