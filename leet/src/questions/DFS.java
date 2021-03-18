@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author bockey
  */
-public class April8th {
+public class DFS {
 
 //    杨辉三角 递归
     public static int func(int left, int right) {
